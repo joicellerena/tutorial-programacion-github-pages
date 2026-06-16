@@ -1,51 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Tutorial de Programación</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutorial de Programación en Java</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background: linear-gradient(135deg,#4facfe,#00f2fe);
+}
+
+header{
+    text-align:center;
+    color:white;
+    padding:50px;
+}
+
+header h1{
+    font-size:45px;
+}
+
+.contenedor{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    padding-bottom:40px;
+}
+
+.tarjeta{
+    background:white;
+    width:260px;
+    border-radius:20px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.tarjeta h2{
+    color:#333;
+}
+
+.tarjeta p{
+    color:#666;
+}
+
+.boton{
+    display:inline-block;
+    margin-top:10px;
+    padding:12px 25px;
+    border-radius:10px;
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+
+.ciclos{background:#ff6b6b;}
+.metodo{background:#6c5ce7;}
+.vectores{background:#00b894;}
+.lista{background:#fdcb6e;}
+.manejo{background:#0984e3;}
+
+footer{
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+</style>
 </head>
+
 <body>
 
-    <h1>Tutorial de Programación</h1>
+<header>
+    <h1>💻 Tutorial de Programación en Java</h1>
+    <p>Proyecto desarrollado para la materia de Programación</p>
+</header>
 
-    <h2>1. Ciclos (Bucles)</h2>
-    <p>Los ciclos permiten repetir instrucciones varias veces.</p>
+<div class="contenedor">
 
-    <pre>
-for(int i=1; i<=5; i++){
-    System.out.println(i);
-}
-    </pre>
+<div class="tarjeta">
+<h2>🔄 Ciclos</h2>
+<p>Aprende for, while y do-while.</p>
+<a href="ciclos.html" class="boton ciclos">Ver Tema</a>
+</div>
 
-    <h2>2. Métodos (Funciones)</h2>
-    <p>Los métodos permiten reutilizar código.</p>
+<div class="tarjeta">
+<h2>⚙️ Métodos</h2>
+<p>Creación y uso de métodos.</p>
+<a href="metodo.html" class="boton metodo">Ver Tema</a>
+</div>
 
-    <pre>
-public static int suma(int a, int b){
-    return a+b;
-}
-    </pre>
+<div class="tarjeta">
+<h2>📊 Vectores</h2>
+<p>Arreglos y matrices en Java.</p>
+<a href="vectores.html" class="boton vectores">Ver Tema</a>
+</div>
 
-    <h2>3. Vectores y Matrices</h2>
-    <p>Los vectores almacenan varios datos del mismo tipo.</p>
+<div class="tarjeta">
+<h2>📋 Listas</h2>
+<p>Manejo de colecciones y listas.</p>
+<a href="lista.html" class="boton lista">Ver Tema</a>
+</div>
 
-    <pre>
-int[] numeros = {1,2,3,4,5};
-    </pre>
+<div class="tarjeta">
+<h2>📁 Archivos</h2>
+<p>Lectura y escritura de archivos.</p>
+<a href="manejo.html" class="boton manejo">Ver Tema</a>
+</div>
 
-    <h2>4. Listas</h2>
-    <p>Las listas permiten almacenar elementos dinámicamente.</p>
+</div>
 
-    <pre>
-ArrayList<String> nombres = new ArrayList<>();
-    </pre>
-
-    <h2>5. Manejo de Archivos</h2>
-    <p>Permite guardar y leer información desde archivos.</p>
-
-    <pre>
-FileWriter archivo = new FileWriter("datos.txt");
-    </pre>
+<footer>
+    <h3>Belén Llerena - Tutorial de Java</h3>
+</footer>
 
 </body>
 </html>
